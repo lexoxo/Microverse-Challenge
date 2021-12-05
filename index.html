@@ -7,21 +7,45 @@
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
-    <p>Hello World, we are software developers!</p>
+    <h1 id="title">Typing Speed Survey Form</h1>
+    <p id="description"></p>
+    <div class="form-container">
+      <form id="survey-form" action="">
+        <label id="name-label" for="name">Name: </label>
+        <input id="name" type="text" placeholder="Enter name"required>
+        <br>
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" type="email" placeholder="Enter email" required>
+        <br>
+        <label id="number-label" for="number">Typing Speed: </label>
+        <input id="number" type="number" min="5" max="250" placeholder="Enter Typing Speed" required>
+        <br>
+        <label for="dropdown">Select Skill Level: 
+        <select id="dropdown" name="mostLike" class="form-control" required="">
+            <option selected="" value="">Beginner</option>
+            <option value="challenges">Intermediate</option>
+            <option value="projects">Advanced</option>
+            
+          </select>
+          <br>
+          <p><strong>Gender</strong></p>
+          <label for="male">Male</label>
+          <input id="male" type="radio" name="gender" value="male">
+          <label for="female">Female</label>
+          <input id="female" type="radio" name="gender" value="female">
+          <br>
+          <p>Do you accept all terms?</p>
+          
+          <label for="yes">yes</label>
+          <input id="yes" type="checkbox" value="yes">
+          <label for="no">No</label>
+          <input id="no" type="checkbox" value="no">
+          <br>
+          <label for="textarea">Comment</label>
+          <textarea id="textarea"></textarea>
+          <br>
+          <button id="submit" type="submit">SUBMIT</button>
+      </form>
+    </div>
   </body>
 </html>

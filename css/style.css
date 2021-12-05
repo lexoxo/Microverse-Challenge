@@ -1,0 +1,23 @@
+p {
+    margin: 0px;
+  }
+  #title {
+    text-align: center;
+    font-family: monospace;
+  }
+  .form-container {
+      background-color: lightgrey;
+      margin-left: 350px;
+      text-align: center;
+      width: 600px;
+    border-radius: 30px;
+    padding: 20px;
+   
+   
+    }
+
+  input {
+    margin: 20px 0px;
+  }
+  
+ 
